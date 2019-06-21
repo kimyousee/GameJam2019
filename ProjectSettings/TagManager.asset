@@ -15,9 +15,9 @@ TagManager:
   - 
   - 
   - 
-  - Ground
-  - PlayerLevel
   - 
+  - PlayerLevel
+  - Ground
   - 
   - 
   - 
@@ -41,4 +41,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 752413903
+    locked: 0
+  - name: Player
+    uniqueID: 2517143753
     locked: 0
