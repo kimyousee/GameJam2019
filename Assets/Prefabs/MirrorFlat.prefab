@@ -27,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1881414960023981428}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: -2.064, z: 8}
-  m_LocalScale: {x: 17, y: 1.7522401, z: 15}
+  m_LocalPosition: {x: -0, y: -0.48, z: 1.58}
+  m_LocalScale: {x: 3.5700002, y: 0.3679704, z: 3.1499999}
   m_Children: []
   m_Father: {fileID: 1881414961343049922}
   m_RootOrder: 0
@@ -103,6 +103,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1881414961343049922}
   - component: {fileID: 1881414961343049923}
+  - component: {fileID: 2977333805802188992}
   m_Layer: 8
   m_Name: MirrorFlat
   m_TagString: Untagged
@@ -119,7 +120,7 @@ Transform:
   m_GameObject: {fileID: 1881414961343049920}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.06353972, y: 0.07774963, z: 0.1351533}
+  m_LocalScale: {x: 0.268464, y: 0.268464, z: 0.268464}
   m_Children:
   - {fileID: 1881414960023981431}
   - {fileID: 1730991361471823676}
@@ -162,10 +163,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1777823543
+  m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 385990552c0f52947a11db64f598aa81, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a60c0929c8167ef4ba6d42dd1fe01454, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -176,6 +177,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &2977333805802188992
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881414961343049920}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: eed338e0f37e29d4d902fe54b02996f4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2503412145502030804
 GameObject:
   m_ObjectHideFlags: 0
@@ -203,8 +223,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2503412145502030804}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 1.01, z: 8}
-  m_LocalScale: {x: 14.990014, y: 4.0363135, z: 15}
+  m_LocalPosition: {x: -0, y: 0.16, z: 1.84}
+  m_LocalScale: {x: 3.5976036, y: 0.9687153, z: 3.6000001}
   m_Children: []
   m_Father: {fileID: 1881414961343049922}
   m_RootOrder: 1
