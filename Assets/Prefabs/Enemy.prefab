@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6143405604242568099}
   - component: {fileID: 6143405604242568098}
   - component: {fileID: 3297088631964157354}
+  - component: {fileID: 4234468617318299698}
   m_Layer: 12
   m_Name: Enemy
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 6143405604242568097}
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.063786246, y: 0.0672, z: 0.063786246}
+  m_LocalScale: {x: 0.27395684, y: 0.28861862, z: 0.27395684}
   m_Children:
   - {fileID: 6143405605201277276}
   m_Father: {fileID: 0}
@@ -72,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: -1777823543
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8afdff7b5fda465449c9c2c1650b1b8b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 05282e15aae4a43489bdb6e29f9a307f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -95,6 +96,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50e7b1f7c6ec14942b0d22f3897ba4de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &4234468617318299698
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6143405604242568097}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3abf30ce2a595224cafcda03548c4091, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6143405605201277275
 GameObject:
   m_ObjectHideFlags: 0
@@ -122,8 +142,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6143405605201277275}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.6, y: -0.8, z: 2.6}
-  m_LocalScale: {x: 18.341202, y: 27.024422, z: 6.9759803}
+  m_LocalPosition: {x: 0.08, y: -0.51, z: 3.5}
+  m_LocalScale: {x: 5.0209045, y: 6.181836, z: 2.0927942}
   m_Children: []
   m_Father: {fileID: 6143405604242568099}
   m_RootOrder: 0
