@@ -12,7 +12,7 @@ public class GameController : MonoBehaviour
 
     public void killEnemy()
     {
-        if (numEnemies <= 0 {
+        if (numEnemies <= 0 ){
             return;
         }
         numEnemies--;
