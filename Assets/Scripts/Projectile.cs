@@ -41,11 +41,12 @@ public class Projectile : MonoBehaviour
             Destroy(gameObject);
 
         } // Collided with enemy
-        else if (Physics.Raycast(ray, out hit, Time.deltaTime * speed * .1f, enemyMask))
+        else if (Physics.Raycast(ray, out hit, Time.deltaTime * speed + .1f, enemyMask))
         {
+            Enemy enemy = hit.collider.transform.parent.gameObject.GetComponent<Enemy>();
+            enemy.shoot();
             // Play the bullet collision animation
             Destroy(gameObject);
-            //hit.collider.gameObject.GetComponent<>
         }
     }
 

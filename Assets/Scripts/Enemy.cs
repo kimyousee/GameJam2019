@@ -5,17 +5,16 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    /**
+     * Called when the enemy gets hit by a projectile
+     */
+    public void shoot()
     {
-        if (collision.gameObject.tag != "Projectiles")
-        {
-            return;
-        }
-
-        // Got hit by projectile.
-
         // Play animation
+        // Wait until animation is done
         // Update game
+        GameController controller = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
+        controller.killEnemy();
 
     }
 
