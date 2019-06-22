@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    Animator anim;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
 
     /**
      * Called when the enemy gets hit by a projectile
@@ -11,18 +18,10 @@ public class Enemy : MonoBehaviour
     public void shoot()
     {
         // Play animation
-        // Wait until animation is done
-        // Update game
-        GameController controller = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
-        controller.killEnemy();
+        anim.SetBool("isDead", true);
 
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
