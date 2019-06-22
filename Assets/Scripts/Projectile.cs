@@ -6,6 +6,7 @@ public class Projectile : MonoBehaviour
 {
     public float speed = 15;
     public LayerMask collisionMask;
+    public LayerMask blockMask;
    
     // Start is called before the first frame update
     void Start()
@@ -23,7 +24,7 @@ public class Projectile : MonoBehaviour
         Ray ray = new Ray(transform.position, transform.up);
         RaycastHit hit;
 
-        //look for a collision
+        //look for a collision with a reflective surface
         if (Physics.Raycast(ray, out hit, Time.deltaTime * speed + .1f, collisionMask))
         {
         //calculate the reflected angle    
@@ -33,5 +34,16 @@ public class Projectile : MonoBehaviour
            // Debug.Log("reflectDir.y = " + reflectDir.y + " reflectDir.x = " + reflectDir.x + " Rotation = " + rotation);
             transform.eulerAngles = new Vector3(0,0, rotation);
         }
+
+        // if it collides with anon reflective surface, destroy the projectile
+        if (Physics.Raycast(ray, out hit, Time.deltaTime * speed + .1f, blockMask))
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    private void OnBecameInvisible()
+    {
+        Destroy(gameObject);
     }
 }

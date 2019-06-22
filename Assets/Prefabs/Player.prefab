@@ -50,6 +50,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -167,3 +168,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4aace6b39b540e341a1f16d59170a7f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectile: {fileID: 5950454835903975875, guid: f1059d3eb9ac76b4aa7113e61876a80c,
+    type: 3}
