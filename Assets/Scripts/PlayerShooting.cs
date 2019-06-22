@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerShooting : MonoBehaviour
 {
+    public GameObject projectile;
+
     Animator anim;
 
     // Start is called before the first frame update
@@ -22,6 +24,7 @@ public class PlayerShooting : MonoBehaviour
             anim.SetTrigger("shoot");
 
             // Spawn a bullet
+            GameObject bullet = (GameObject)Instantiate(projectile, transform.position, transform.rotation);
         }
     }
 }
