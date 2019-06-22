@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour
 {
     public int numEnemies = 1;
     public Canvas winningTextCanvas;
+    public GameObject eventSystem;
 
     public string lastLevel = "Level6";
 
@@ -25,26 +26,46 @@ public class GameController : MonoBehaviour
         // Get the scene we're in
         string currentScene = SceneManager.GetActiveScene().name;
 
-        Text winningText = winningTextCanvas.GetComponent<Text>();
-        Button nextButton = winningTextCanvas.GetComponent<Button>();
-        Text buttonText = nextButton.GetComponent<Text>();
+        // Play winning animation... or just put up some text for now
+        // This canvas also has a button for the next level
+        Canvas winCanvas = Instantiate(winningTextCanvas);
+        Instantiate(eventSystem);
+
+        Text[] winningTexts = winCanvas.GetComponentsInChildren<Text>();
+        Button nextButton = winCanvas.GetComponentInChildren<Button>();
+        Text buttonText = winCanvas.GetComponentInChildren<Text>();
 
         // Player has completed the level
         if (currentScene == lastLevel)
         {
-            winningText.text = "You Win!";
-            buttonText.text = "Main Menu";
+            foreach (Text textComponent in winningTexts)
+            {
+                if (textComponent.name == "TitleText")
+                {
+                    textComponent.text = "You Win!";
+                }
+                else if (textComponent.name == "ButtonText")
+                {
+                    textComponent.text = "Main Menu";
+                }
+            }
         }
         else
         {
-            winningText.text = "Target Eliminated";
-            buttonText.text = "Next Level";
+            foreach (Text textComponent in winningTexts)
+            {
+                if (textComponent.name == "TitleText")
+                {
+                    textComponent.text = "Target Eliminated!";
+                }
+                else if (textComponent.name == "ButtonText")
+                {
+                    textComponent.text = "Next Level";
+                }
+            }
         }
 
         nextButton.onClick.AddListener(onNextButtonClick);
-        // Play winning animation... or just put up some text for now
-        // This canvas also has a main menu button
-        Instantiate(winningTextCanvas, new Vector3(), Quaternion.identity);
     }
 
     void onNextButtonClick() {

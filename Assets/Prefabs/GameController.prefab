@@ -46,4 +46,6 @@ MonoBehaviour:
   numEnemies: 1
   winningTextCanvas: {fileID: 163566765256297416, guid: 3f538c2fd7b39b945b70978d523fc98a,
     type: 3}
+  eventSystem: {fileID: 8315855473463353654, guid: caed569cf6e80be47b02cc02bb72f36a,
+    type: 3}
   lastLevel: Level6
