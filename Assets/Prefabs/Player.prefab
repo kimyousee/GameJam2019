@@ -216,6 +216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 322d5568fe388b64fae1f60661c89f43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  length: 10
 --- !u!120 &2270375563097640518
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -234,7 +235,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b697f8268e5cd5044ac584e506d09bda, type: 2}
+  - {fileID: 2100000, guid: d943dc92f709ba547a6b3394711fbfaf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -260,7 +261,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.03
+    widthMultiplier: 0.015
     widthCurve:
       serializedVersion: 2
       m_Curve:
