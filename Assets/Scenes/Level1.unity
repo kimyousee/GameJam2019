@@ -145,7 +145,7 @@ PrefabInstance:
     - target: {fileID: 6143405604242568099, guid: 821c8c4ed7898354b86631373d2a1091,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 6143405604242568099, guid: 821c8c4ed7898354b86631373d2a1091,
         type: 3}
@@ -214,7 +214,7 @@ PrefabInstance:
     - target: {fileID: 6926554458276079625, guid: c9d3049fd99d05b4fa6cfd86a5f32c84,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 6926554458276079625, guid: c9d3049fd99d05b4fa6cfd86a5f32c84,
         type: 3}
@@ -278,12 +278,12 @@ PrefabInstance:
     - target: {fileID: 6926554458276079625, guid: c9d3049fd99d05b4fa6cfd86a5f32c84,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: -0.51
       objectReference: {fileID: 0}
     - target: {fileID: 6926554458276079625, guid: c9d3049fd99d05b4fa6cfd86a5f32c84,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 6926554458276079625, guid: c9d3049fd99d05b4fa6cfd86a5f32c84,
         type: 3}
@@ -352,7 +352,7 @@ PrefabInstance:
     - target: {fileID: 6926554458276079625, guid: c9d3049fd99d05b4fa6cfd86a5f32c84,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 6926554458276079625, guid: c9d3049fd99d05b4fa6cfd86a5f32c84,
         type: 3}
@@ -591,11 +591,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2277469449472186008, guid: 0c9b9e2decc1c61419167eeb9dca631d,
-        type: 3}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 2277469449472186010, guid: 0c9b9e2decc1c61419167eeb9dca631d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -666,6 +661,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.539
       objectReference: {fileID: 0}
+    - target: {fileID: 2277469449472186008, guid: 0c9b9e2decc1c61419167eeb9dca631d,
+        type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c9b9e2decc1c61419167eeb9dca631d, type: 3}
 --- !u!1001 &1872083278
@@ -693,7 +693,7 @@ PrefabInstance:
     - target: {fileID: 6926554458276079625, guid: c9d3049fd99d05b4fa6cfd86a5f32c84,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 6926554458276079625, guid: c9d3049fd99d05b4fa6cfd86a5f32c84,
         type: 3}
