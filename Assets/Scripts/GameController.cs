@@ -8,9 +8,15 @@ public class GameController : MonoBehaviour
 {
     public int numEnemies = 1;
     public Canvas winningTextCanvas;
+    public Canvas startScreen;
     public GameObject eventSystem;
 
     public string lastLevel = "Level9";
+
+    private void Start()
+    {
+        Instantiate(startScreen);
+    }
 
     public void killEnemy()
     {
