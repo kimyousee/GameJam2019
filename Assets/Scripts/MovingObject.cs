@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class MovingObject : MonoBehaviour
 {
-    public Vector3 startPoint;
+    private Vector3 startPoint;
     public Vector3 endPoint;
     public float speed = 1.0f;
+
+    private void Start()
+    {
+        startPoint = transform.position;
+    }
 
     void Update()
     {
