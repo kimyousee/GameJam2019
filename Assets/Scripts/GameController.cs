@@ -10,7 +10,7 @@ public class GameController : MonoBehaviour
     public Canvas winningTextCanvas;
     public GameObject eventSystem;
 
-    public string lastLevel = "Level6";
+    public string lastLevel = "Level9";
 
     public void killEnemy()
     {
@@ -81,6 +81,9 @@ public class GameController : MonoBehaviour
         { "Level3", "Level4" },
         { "Level4", "Level5" },
         { "Level5", "Level6" },
-        { "Level6", "Menu" },
+        { "Level6", "Level7" },
+        { "Level7", "Level8" },
+        { "Level8", "Level9" },
+        { "Level9", "Menu" },
     };
 }
