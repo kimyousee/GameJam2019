@@ -10,6 +10,9 @@ public class GameController : MonoBehaviour
     public Canvas winningTextCanvas;
     public Canvas startScreen;
     public GameObject eventSystem;
+    public Sprite menuButtonImage;
+    public Sprite nextButtonImage;
+    public Skybox endGameSkybox;
 
     public string lastLevel = "Level9";
 
@@ -35,34 +38,31 @@ public class GameController : MonoBehaviour
 
         Text[] winningTexts = winCanvas.GetComponentsInChildren<Text>();
         Button nextButton = winCanvas.GetComponentInChildren<Button>();
+        Image buttonImage = nextButton.GetComponent<Image>();
         Text buttonText = winCanvas.GetComponentInChildren<Text>();
 
-        // Player has completed the level
+        // Player has completed the last level
         if (currentScene == lastLevel)
         {
+            buttonImage.sprite = menuButtonImage;
             foreach (Text textComponent in winningTexts)
             {
                 if (textComponent.name == "TitleText")
                 {
                     textComponent.text = "ALL TARGETS ERATICATED";
-                }
-                else if (textComponent.name == "ButtonText")
-                {
-                    textComponent.text = "Main Menu";
+                    break;
                 }
             }
         }
         else
         {
+            buttonImage.sprite = nextButtonImage;
             foreach (Text textComponent in winningTexts)
             {
                 if (textComponent.name == "TitleText")
                 {
                     textComponent.text = "Target Eliminated!";
-                }
-                else if (textComponent.name == "ButtonText")
-                {
-                    textComponent.text = "Next Level";
+                    break;
                 }
             }
         }
