@@ -12,7 +12,7 @@ public class GameController : MonoBehaviour
     public GameObject eventSystem;
     public Sprite menuButtonImage;
     public Sprite nextButtonImage;
-    public Skybox endGameSkybox;
+    public Material endGameSkybox;
 
     public string lastLevel = "Level9";
 
@@ -45,6 +45,7 @@ public class GameController : MonoBehaviour
         if (currentScene == lastLevel)
         {
             buttonImage.sprite = menuButtonImage;
+            //RenderSettings.skybox = endGameSkybox;
             foreach (Text textComponent in winningTexts)
             {
                 if (textComponent.name == "TitleText")

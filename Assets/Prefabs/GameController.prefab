@@ -52,4 +52,5 @@ MonoBehaviour:
     type: 3}
   menuButtonImage: {fileID: 21300000, guid: 14eb4c80cbb319c45902e0cf9b66d587, type: 3}
   nextButtonImage: {fileID: 21300000, guid: 8ff16bdec0a7b464bb9bc0c78e8a02a8, type: 3}
+  endGameSkybox: {fileID: 2100000, guid: 36c041561b27c8545a1f8a0cecc5db31, type: 2}
   lastLevel: Level9
