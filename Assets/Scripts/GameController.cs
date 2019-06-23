@@ -13,10 +13,6 @@ public class GameController : MonoBehaviour
 
     public string lastLevel = "Level9";
 
-    private void Start()
-    {
-        Instantiate(startScreen);
-    }
 
     public void killEnemy()
     {
@@ -48,7 +44,7 @@ public class GameController : MonoBehaviour
             {
                 if (textComponent.name == "TitleText")
                 {
-                    textComponent.text = "You Win!";
+                    textComponent.text = "ALL TARGETS ERATICATED";
                 }
                 else if (textComponent.name == "ButtonText")
                 {
